@@ -1,0 +1,59 @@
+/* Estilos para pantallas grandes (escritorio, tabletas, etc.) */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    text-align: center;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+}
+
+h1 {
+    margin: 0;
+}
+
+.thumbnails {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.thumbnail {
+    margin: 10px;
+    text-align: center;
+    flex: 1;
+    max-width: 300px;
+}
+
+.thumbnail img {
+    width: 320px;
+    height: 180px;
+    border: 5px solid #ddd;
+}
+
+.thumbnail p {
+    font-weight: bold;
+}
+
+/* Media query para pantallas pequeñas (teléfonos móviles) */
+@media screen and (max-width: 768px) {
+    .thumbnails {
+        flex-direction: column; /* Colocar las miniaturas en una columna */
+        align-items: center; /* Centrar las miniaturas horizontalmente */
+    }
+
+    .thumbnail {
+        max-width: 100%; /* Permitir que las miniaturas ocupen todo el ancho de la pantalla */
+    }
+
+    /* Establecer un ancho fijo para las imágenes en pantallas pequeñas */
+    .thumbnail img {
+        width: 320px; /* Tamaño fijo, ajusta según sea necesario */
+        height: 180px;
+    }
+}
