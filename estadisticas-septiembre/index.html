@@ -11,18 +11,25 @@
         <h1>ESTADÍSTICAS SEPTIEMBRE</h1>
     </header>
     <section class="thumbnails">
-        <div class="thumbnail">
+        <div class="thumbnail" onclick="openImageModal('hs.jpeg', 'Miniatura 1')">
             <img src="imagen1.png" alt="Miniatura 1">
             <p>Miniatura 1</p>
         </div>
-        <div class="thumbnail">
+        <div class="thumbnail" onclick="openImageModal('sg.webp', 'Miniatura 2')">
             <img src="imagen2.png" alt="Miniatura 2">
             <p>Miniatura 2</p>
         </div>
-        <div class="thumbnail">
+        <div class="thumbnail" onclick="openImageModal('ts.jpeg', 'Miniatura 3')">
             <img src="imagen3.png" alt="Miniatura 3">
             <p>Miniatura 3</p>
         </div>
     </section>
+    <!-- Modal para mostrar la imagen en grande -->
+    <div id="imageModal" class="modal">
+        <span class="close" onclick="closeImageModal()">&times;</span>
+        <img id="modalImage" src="" alt="">
+        <div id="caption"></div>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>

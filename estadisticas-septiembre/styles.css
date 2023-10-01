@@ -57,3 +57,45 @@ h1 {
         height: 180px;
     }
 }
+
+/* Agrega estilos para el modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.9);
+}
+
+.modal img {
+    display: block;
+    margin: 0 auto;
+    max-width: 90%;
+    max-height: 80%;
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: #ccc;
+}
+
+/* Estilos para el modal en pantallas pequeñas */
+@media screen and (max-width: 768px) {
+    .modal img {
+        max-width: 100%;
+    }
+}
